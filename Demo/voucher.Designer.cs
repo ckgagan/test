@@ -45,6 +45,7 @@ namespace Demo
             this.ayumiDB1DataSet1 = new Demo.AyumiDB1DataSet1();
             this.codeNameTableAdapter = new Demo.AyumiDB1DataSet1TableAdapters.CodeNameTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.ayumiDB1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.codeNameBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ayumiDB1DataSet1)).BeginInit();
@@ -103,7 +104,6 @@ namespace Demo
             this.debitCredit.Size = new System.Drawing.Size(121, 21);
             this.debitCredit.Sorted = true;
             this.debitCredit.TabIndex = 6;
-            this.debitCredit.SelectedIndexChanged += new System.EventHandler(this.debitCredit_SelectedIndexChanged);
             // 
             // debitCreditLbl
             // 
@@ -122,7 +122,6 @@ namespace Demo
             this.showBtn.TabIndex = 8;
             this.showBtn.Text = "Show Data";
             this.showBtn.UseVisualStyleBackColor = true;
-            this.showBtn.Click += new System.EventHandler(this.showBtn_Click);
             // 
             // amountLbl
             // 
@@ -179,33 +178,23 @@ namespace Demo
             this.label1.TabIndex = 12;
             this.label1.Text = "label1";
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(130, 91);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(197, 23);
+            this.progressBar1.TabIndex = 0;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
             // voucher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 515);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.amountTxt);
-            this.Controls.Add(this.amountLbl);
-            this.Controls.Add(this.showBtn);
-            this.Controls.Add(this.debitCreditLbl);
-            this.Controls.Add(this.debitCredit);
-            this.Controls.Add(this.lfTxt);
-            this.Controls.Add(this.lfLbl);
-            this.Controls.Add(this.particularTxt);
-            this.Controls.Add(this.particularLbl);
-            this.Controls.Add(this.codeNumberLbl);
+            this.ClientSize = new System.Drawing.Size(533, 266);
+            this.Controls.Add(this.progressBar1);
             this.Name = "voucher";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "voucher";
-            this.Load += new System.EventHandler(this.voucher_Load);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.voucher_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.ayumiDB1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codeNameBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ayumiDB1DataSet1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -227,5 +216,6 @@ namespace Demo
         private System.Windows.Forms.BindingSource codeNameBindingSource;
         private Demo.AyumiDB1DataSet1TableAdapters.CodeNameTableAdapter codeNameTableAdapter;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

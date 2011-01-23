@@ -127,5 +127,10 @@ namespace Demo
             this.codeNameTableAdapter.Fill(this.ayumiDB1DataSet1.CodeName);
 
         }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

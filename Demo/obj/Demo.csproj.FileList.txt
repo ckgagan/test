@@ -1,0 +1,3 @@
+bin\Debug\Demo.exe.config
+obj\Debug\Demo.exe
+obj\Debug\Demo.pdb
